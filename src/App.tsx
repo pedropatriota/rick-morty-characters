@@ -1,7 +1,12 @@
 import SearchBar from "./components/SearchBar";
 
 function App() {
-  return <SearchBar />;
+  return (
+    <>
+      <h2>Rick and Morty Characters</h2>
+      <SearchBar />
+    </>
+  );
 }
 
 export default App;

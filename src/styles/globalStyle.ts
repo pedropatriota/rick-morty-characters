@@ -8,11 +8,13 @@ export default createGlobalStyle`
 }
 
 #root {
-  width:100%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  height: 100vh;
+  width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    padding: 0.5rem min(5vw, 5rem);
 }
 
 body{
