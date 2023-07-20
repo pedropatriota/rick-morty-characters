@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListItem should match snapshot 1`] = `
+<div>
+  <li
+    class="sc-aXZVg dXIGHn"
+  >
+    <div
+      class="sc-gEvEer kjrfHW"
+    >
+      <img
+        alt="Rick Sanchez"
+        class="sc-eqUAAy jqhXwM"
+        src="https://rickandmortyapi.com/api/character/avatar/1.jpeg"
+      />
+      <span>
+        Rick Sanchez
+      </span>
+    </div>
+  </li>
+</div>
+`;

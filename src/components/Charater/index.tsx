@@ -1,10 +1,10 @@
 import * as Styled from "./styles";
 import type { ICharacterProps } from "./contracts";
 
-const Character = ({ id, image, name }: ICharacterProps) => (
-  <Styled.LisContainer key={id}>
+const Character = ({ image, name }: ICharacterProps) => (
+  <Styled.LisContainer>
     <Styled.InfoContainer>
-      <img src={image} alt={name} />
+      <Styled.CharacterImg src={image} alt={name} />
       <span>{name}</span>
     </Styled.InfoContainer>
   </Styled.LisContainer>

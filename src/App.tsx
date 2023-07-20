@@ -1,11 +1,13 @@
 import SearchBar from "./components/SearchBar";
+import logo from "./assets/RickAndMortyLogo.png";
+import * as Styled from "./app.styles";
 
 function App() {
   return (
-    <>
-      <h2>Rick and Morty Characters</h2>
+    <Styled.Container>
+      <Styled.LogoImg src={logo} alt="logo Rick and Morty" />
       <SearchBar />
-    </>
+    </Styled.Container>
   );
 }
 

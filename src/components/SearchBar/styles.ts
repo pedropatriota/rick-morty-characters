@@ -3,10 +3,9 @@ import styled from "styled-components";
 export const SearchContainer = styled.div<{ expand: string }>`
   width: 100%;
   max-width: 34rem;
-  height: ${({ expand }) => (expand === "true" ? "30rem" : "4rem")};
+  height: ${({ expand }) => (expand === "true" ? "25rem" : "4rem")};
   display: flex;
   flex-direction: column;
-  margin-top: 3rem;
   background-color: #fff;
   overflow: hidden;
   box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.2);
@@ -42,10 +41,8 @@ export const Input = styled.input`
   }
 `;
 
-export const CloseIcon = styled.span<{ inputvalue: string }>`
+export const CloseIcon = styled.span`
   color: #ccc;
-  opacity: ${({ inputvalue }) => (inputvalue ? 1 : 0)};
-  transition: opacity 0.5s ease-in-out;
   cursor: pointer;
 `;
 

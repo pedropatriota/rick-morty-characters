@@ -9,10 +9,10 @@ export const InfoContainer = styled.div`
   display: flex;
   gap: 1rem;
   align-items: center;
+`;
 
-  img {
-    width: 100%;
-    max-width: 3.12rem;
-    height: auto;
-  }
+export const CharacterImg = styled.img`
+  width: 100%;
+  max-width: 3.12rem;
+  height: auto;
 `;

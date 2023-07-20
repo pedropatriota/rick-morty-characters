@@ -4,18 +4,12 @@ export default createGlobalStyle`
 *{
   margin:0;
   padding:0;
-  box-sizing: border-box;
+  box-sizing: border-box;  
 }
 
 #root {
   width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    height: 100vh;
-    padding: 0.5rem min(5vw, 5rem);
-}
+  
 
 body{
   font-family:'Nunito Sans', sans-serif;
@@ -23,6 +17,8 @@ body{
   --webkit-font-smoothing: antialiased;  
   background-color: #fff;
   color: #000;
+  
+}
   
 
   @media(max-width: 768px){
