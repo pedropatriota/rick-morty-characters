@@ -14,7 +14,10 @@ exports[`ListItem should match snapshot 1`] = `
         src="https://rickandmortyapi.com/api/character/avatar/1.jpeg"
       />
       <span>
-        Rick Sanchez
+        <strong>
+          Rick
+        </strong>
+         Sanchez
       </span>
     </div>
   </li>

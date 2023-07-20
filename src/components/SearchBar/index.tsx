@@ -34,7 +34,12 @@ const SearchBar = () => {
       </Styled.InputContainer>
       <Styled.DropdownContainer>
         {result?.map(({ name, id, image }) => (
-          <Character key={id} name={name} image={image} />
+          <Character
+            key={id}
+            name={name}
+            image={image}
+            inputValue={inputValue}
+          />
         ))}
       </Styled.DropdownContainer>
     </Styled.SearchContainer>

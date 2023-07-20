@@ -1,11 +1,26 @@
 import * as Styled from "./styles";
 import type { ICharacterProps } from "./contracts";
 
-const Character = ({ image, name }: ICharacterProps) => (
+export function highlightMatchedString(text: string, highlight: string) {
+  const parts = text.split(new RegExp(`(${highlight})`, "gi"));
+  return (
+    <span>
+      {parts.map((part, index) =>
+        part.toLowerCase() === highlight.toLowerCase() ? (
+          <strong key={index}>{part}</strong>
+        ) : (
+          part
+        )
+      )}
+    </span>
+  );
+}
+
+const Character = ({ image, name, inputValue }: ICharacterProps) => (
   <Styled.LisContainer>
     <Styled.InfoContainer>
       <Styled.CharacterImg src={image} alt={name} />
-      <span>{name}</span>
+      {highlightMatchedString(name, inputValue)}
     </Styled.InfoContainer>
   </Styled.LisContainer>
 );

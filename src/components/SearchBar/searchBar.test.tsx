@@ -81,4 +81,10 @@ describe("SearchBar", () => {
     expect(input.value).toBe("");
     expect(searchContainer).toHaveStyle("height: 4rem");
   });
+
+  it("should match snapshot", () => {
+    const { container } = setup();
+
+    expect(container).toMatchSnapshot();
+  });
 });
